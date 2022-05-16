@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header .linhaamarela {
+  margin: 0px auto;
+  background-color: #fcec04;
+  width: auto;
+  height: 8px;
+}
+header .nav {
+  box-sizing: border-box;
+  background-color: white;
+  width: 60%;
+  height: 35px;
+  color: black;
+  margin: 0px auto;
+}
+header .nav .socialmedia {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+header .nav .btn {
+  margin: 0px;
+  padding: 0px;
+}
+header .nav .btn-pedido {
+  position: absolute;
+  margin-left: 65%;
+  margin-top: 2%;
+}
+header .nav .nav-content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(155, 151, 151, 0.25);
+  border-radius: 0px 0px 120px 120px;
+  font-size: 16px;
+}
+header .nav .nav-content .logo {
+  width: 30%;
+  max-width: 160px;
+  height: 70px;
+  background-color: #fcec04;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 15px 15px;
+  margin: 0px 15px;
+}
+header .nav .nav-content .logo img {
+  width: 40px;
+  height: 60px;
+}
+header .nav .nav-content ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

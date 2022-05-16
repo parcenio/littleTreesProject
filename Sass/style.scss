@@ -1,0 +1,8 @@
+// Arquivo Principal, fica toda a organização de imports do seu projeto.
+// Os imports seguem hierarquias, como você vai utilizar as cores no estilo da sua página inicial, por isso a importação das cores vem antes, caso contrário, as referências as variáveis no seu "index.scss" não iriam funcionar
+
+// IMPORT COLORS
+@import "./colors/colors.scss";
+
+// IMPORT INDEX.SCSS
+@import "./pages/index.scss";
