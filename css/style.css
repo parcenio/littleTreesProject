@@ -1,5 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;800;900&family=Lato:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;800;900&family=Zen+Loop&display=swap");
+.main-content {
+  box-sizing: border-box;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+.main-content h1 {
+  color: #000;
+  padding: 10px 0px;
+  padding-bottom: 3px;
+  font-size: 30px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 900;
+}
+.main-content h3 {
+  color: #7b7b7b;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: "Zen Loop", cursive;
+}
+.main-content p {
+  padding: 6px 0px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Heebo", sans-serif;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -19,19 +49,57 @@ header .nav {
   color: black;
   margin: 0px auto;
 }
+header .nav .item {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+}
+header .nav .item a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+header .nav .item a:hover {
+  color: #33ac5b;
+  transition: 500ms;
+  font-weight: 600;
+}
 header .nav .socialmedia {
   position: absolute;
-  top: 3%;
+  top: 2%;
   left: 3%;
 }
+header .nav .socialmedia p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Heebo", sans-serif;
+  font-size: 12px;
+}
+header .nav .socialmedia img {
+  width: 25px;
+  height: 25px;
+  padding: 5px 5px;
+}
 header .nav .btn {
-  margin: 0px;
-  padding: 0px;
+  background-color: #e84045;
+  padding: 10px;
+  border-radius: 20px;
 }
 header .nav .btn-pedido {
   position: absolute;
   margin-left: 65%;
-  margin-top: 2%;
+  margin-top: 1%;
+  color: #fcec04;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  box-shadow: 0px 4px 4px rgba(155, 151, 151, 0.25);
+}
+header .nav .btn-pedido:hover {
+  background-color: #33ac5b;
+  transition: 600ms;
+  color: white;
 }
 header .nav .nav-content {
   box-sizing: border-box;
@@ -61,36 +129,6 @@ header .nav .nav-content ul {
   list-style: none;
   display: flex;
   gap: 40px;
-}
-
-.main-content {
-  box-sizing: border-box;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 60px 0px;
-}
-.main-content h1 {
-  color: #000;
-  padding: 10px 0px;
-  padding-bottom: 3px;
-  font-size: 30px;
-  font-family: "Heebo", sans-serif;
-  font-weight: 900;
-}
-.main-content h3 {
-  color: #7b7b7b;
-  font-size: 20px;
-  padding-bottom: 10px;
-  font-family: "Zen Loop", cursive;
-}
-.main-content p {
-  padding: 6px 0px;
-  text-align: justify;
-  font-size: 16px;
-  font-family: "Heebo", sans-serif;
 }
 
 footer .footer-content {
