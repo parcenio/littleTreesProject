@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;800;900&family=Zen+Loop&display=swap");
 .main-content {
   box-sizing: border-box;
@@ -150,6 +150,35 @@ footer .footer-content {
 footer a {
   text-decoration: none;
   color: #7b7b7b;
+}
+
+@media (max-width: 1020px) {
+  header .nav .nav-content .logo {
+    position: relative;
+    margin: 0px 15px;
+  }
+  header .nav .item {
+    font-size: 14px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+  }
+}
+@media (max-width: 940px) {
+  header .nav .nav-content .item {
+    font-size: 12px;
+  }
+  header .nav .btn-pedido {
+    margin-left: 63%;
+    margin-top: 2%;
+  }
+}
+@media (max-width: 900px) {
+  header .logo img {
+    width: 10px;
+  }
+  header .item {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
