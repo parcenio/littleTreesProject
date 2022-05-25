@@ -44,7 +44,6 @@ header .linhaamarela {
 header .nav {
   box-sizing: border-box;
   background-color: white;
-  width: 60%;
   height: 70px;
   color: black;
   margin: 0px auto;
@@ -87,7 +86,7 @@ header .nav .btn {
 }
 header .nav .btn-pedido {
   position: absolute;
-  margin-left: 65%;
+  margin-left: 85%;
   margin-top: 1%;
   color: #fcec04;
   text-decoration: none;
@@ -109,17 +108,20 @@ header .nav .nav-content {
   box-shadow: 0px 4px 4px rgba(155, 151, 151, 0.25);
   border-radius: 0px 0px 120px 120px;
   font-size: 16px;
+  width: 60%;
+  margin: 0% 20%;
 }
 header .nav .nav-content .logo {
-  width: 30%;
-  max-width: 160px;
+  width: 40%;
+  max-width: 150px;
   height: 70px;
   background-color: #fcec04;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 15px 15px;
-  margin: 0px 15px;
+  margin: 0px 5%;
 }
 header .nav .nav-content .logo img {
   width: 40px;
