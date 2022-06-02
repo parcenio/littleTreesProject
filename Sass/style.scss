@@ -71,11 +71,12 @@ header {
       background-color: $third-color;
       padding: 10px;
       border-radius: 20px;
+      margin-left: 0px;
     }
 
     .btn-pedido {
       position: absolute;
-      margin-left: 85%;
+      // margin-left: 85%;
       margin-top: 1%;
       color: $primary-color;
       text-decoration: none;
@@ -266,7 +267,6 @@ footer {
       .btn-pedido {
         margin-top: 0px;
         top: 1.5%;
-        padding: auto;
       }
       .nav-content {
         border-radius: 0px;
@@ -289,6 +289,26 @@ footer {
     .footer-content {
       height: 30px;
       font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    .nav {
+      .socialmedia {
+        display: none;
+      }
+      .btn-pedido {
+        margin-left: 5%;
+        top: 1%;
+      }
+    }
+
+    .nav-content {
+      ul li {
+        display: none;
+      }
     }
   }
 }
