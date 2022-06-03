@@ -87,6 +87,7 @@ header .nav .btn {
 }
 header .nav .btn-pedido {
   position: absolute;
+  margin-left: 85%;
   margin-top: 1%;
   color: #fcec04;
   text-decoration: none;
@@ -131,6 +132,9 @@ header .nav .nav-content ul {
   list-style: none;
   display: flex;
   gap: 40px;
+}
+header .nav #nav-burguer {
+  display: none;
 }
 
 footer .footer-content {
@@ -264,8 +268,23 @@ footer a {
     margin-left: 5%;
     top: 1%;
   }
-  header .nav-content ul li {
+  header .nav .nav-content ul li {
     display: none;
+  }
+  header .nav #nav-burguer {
+    display: block;
+    position: absolute;
+    margin-left: 85%;
+    top: 1rem;
+  }
+  header .nav #nav-burguer ul {
+    list-style: none;
+    display: none;
+  }
+  header .nav #nav-burguer ul a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
   }
 }
 
