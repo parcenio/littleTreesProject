@@ -315,8 +315,8 @@ footer {
       #nav-burguer {
         display: block;
         position: absolute;
-        margin-left: 85%;
         top: 1rem;
+        right: 5%;
 
         ul {
           list-style: none;
@@ -326,6 +326,14 @@ footer {
             color: inherit;
             cursor: pointer;
           }
+        }
+      }
+
+      #nav-burguer.active {
+        ul {
+          display: block;
+          margin-top: 1rem;
+          right: 50%;
         }
       }
     }
