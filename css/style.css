@@ -101,6 +101,9 @@ header .nav .btn-pedido:hover {
   transition: 600ms;
   color: white;
 }
+header .nav .burguer-nav {
+  display: none;
+}
 header .nav .nav-content {
   box-sizing: border-box;
   display: flex;
@@ -132,9 +135,6 @@ header .nav .nav-content ul {
   list-style: none;
   display: flex;
   gap: 40px;
-}
-header .nav #nav-burguer {
-  display: none;
 }
 
 footer .footer-content {
@@ -261,6 +261,14 @@ footer a {
   }
 }
 @media (max-width: 600px) {
+  header a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  header ul {
+    list-style: none;
+  }
   header .nav .socialmedia {
     display: none;
   }
@@ -271,25 +279,76 @@ footer a {
   header .nav .nav-content ul li {
     display: none;
   }
-  header .nav #nav-burguer {
+  header .nav #btn-mobile {
     display: block;
     position: absolute;
     top: 1rem;
-    right: 5%;
-  }
-  header .nav #nav-burguer ul {
-    list-style: none;
-    display: none;
-  }
-  header .nav #nav-burguer ul a {
-    text-decoration: none;
-    color: inherit;
+    right: 2rem;
     cursor: pointer;
   }
-  header .nav #nav-burguer.active ul {
+  header .nav .burguer-nav {
     display: block;
-    margin-top: 1rem;
-    right: 50%;
+  }
+  header .nav #menu-burguer {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    right: 0px;
+    background: #33ac5b;
+    transition: 0.6s;
+    z-index: 10000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  header .nav #menu-burguer.active {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    visibility: visible;
+    overflow-y: auto;
+    font-size: 20px;
+  }
+  header .nav #menu-burguer a {
+    border-bottom: 2px solid rgb(230, 247, 4);
+    font-size: 14px;
+    color: white;
+  }
+  header .nav #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  header .nav #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  header .nav #hamburger::after,
+header .nav #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  header .nav #nav-burguer.active #hamburger {
+    border-top-color: transparent;
+  }
+  header .nav #nav-burguer.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  header .nav #nav-burguer.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
 

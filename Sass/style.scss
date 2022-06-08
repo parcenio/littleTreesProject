@@ -92,7 +92,9 @@ header {
       transition: 600ms;
       color: white;
     }
-
+    .burguer-nav {
+      display: none;
+    }
     .nav-content {
       box-sizing: border-box;
       display: flex;
@@ -127,9 +129,6 @@ header {
         display: flex;
         gap: 40px;
       }
-    }
-    #nav-burguer {
-      display: none;
     }
   }
 }
@@ -233,6 +232,7 @@ footer {
       .btn-pedido {
         font-size: 10px;
       }
+
       .nav-content {
         .logo {
           max-width: 120px;
@@ -299,6 +299,14 @@ footer {
 
 @media (max-width: 600px) {
   header {
+    a {
+      color: black;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+    ul {
+      list-style: none;
+    }
     .nav {
       .socialmedia {
         display: none;
@@ -312,29 +320,81 @@ footer {
           display: none;
         }
       }
-      #nav-burguer {
+      #btn-mobile {
         display: block;
         position: absolute;
         top: 1rem;
-        right: 5%;
-
-        ul {
-          list-style: none;
-          display: none;
-          a {
-            text-decoration: none;
-            color: inherit;
-            cursor: pointer;
-          }
-        }
+        right: 2rem;
+        cursor: pointer;
       }
 
-      #nav-burguer.active {
-        ul {
-          display: block;
-          margin-top: 1rem;
-          right: 50%;
-        }
+      .burguer-nav {
+        display: block;
+      }
+
+      #menu-burguer {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0px;
+        background: $second-color;
+        transition: 0.6s;
+        z-index: 10000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+      }
+      #menu-burguer.active {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 50px);
+        visibility: visible;
+        overflow-y: auto;
+        font-size: 20px;
+      }
+      #menu-burguer a {
+        // width: 100%;
+        // padding: 1rem 0;
+        // margin: 0 1rem;
+        border-bottom: 2px solid rgba(230, 247, 4);
+        font-size: 14px;
+        color: white;
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav-burguer.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav-burguer.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav-burguer.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
       }
     }
   }
