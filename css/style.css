@@ -219,6 +219,16 @@ footer a {
     height: 40px;
   }
 
+  .main-content h1 {
+    font-size: 20px;
+  }
+  .main-content h3 {
+    font-size: 16px;
+  }
+  .main-content p {
+    font-size: 14px;
+  }
+
   footer .footer-content {
     height: 30px;
     font-size: 12px;
@@ -349,6 +359,16 @@ header .nav #hamburger::before {
   header .nav #nav-burguer.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
+  }
+
+  .main-content h1 {
+    font-size: 18px;
+  }
+  .main-content h3 {
+    font-size: 14px;
+  }
+  .main-content p {
+    font-size: 12px;
   }
 }
 

@@ -245,6 +245,19 @@ footer {
       }
     }
   }
+
+  .main-content {
+    h1 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
   footer {
     .footer-content {
       height: 30px;
@@ -396,6 +409,17 @@ footer {
         transform: rotate(-135deg);
         top: -7px;
       }
+    }
+  }
+  .main-content {
+    h1 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 }
