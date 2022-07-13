@@ -30,6 +30,14 @@
   font-family: "Heebo", sans-serif;
 }
 
+.container {
+  height: 84vh;
+}
+
+h1 {
+  color: yellow;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -137,9 +145,13 @@ header .nav .nav-content ul {
   gap: 40px;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 footer .footer-content {
   background-color: #fcec04;
-  width: 100%;
   height: 40px;
   font-family: "Heebo", sans-serif;
   font-weight: 400;
@@ -147,8 +159,7 @@ footer .footer-content {
   position: relative;
   bottom: 0;
   left: 0;
-  margin-top: 2.3%;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #7b7b7b;
@@ -188,6 +199,12 @@ footer a {
   }
   header .item {
     font-size: 12px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
@@ -229,6 +246,11 @@ footer a {
     font-size: 14px;
   }
 
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   footer .footer-content {
     height: 30px;
     font-size: 12px;
@@ -265,6 +287,11 @@ footer a {
     gap: 20px;
   }
 
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   footer .footer-content {
     height: 30px;
     font-size: 12px;
@@ -361,6 +388,9 @@ header .nav #hamburger::before {
     top: -7px;
   }
 
+  .main-content {
+    padding: 30px 0;
+  }
   .main-content h1 {
     font-size: 18px;
   }
@@ -369,6 +399,12 @@ header .nav #hamburger::before {
   }
   .main-content p {
     font-size: 12px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }
 
